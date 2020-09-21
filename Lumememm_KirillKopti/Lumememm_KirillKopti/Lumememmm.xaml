@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lumememm_KirillKopti.Lumememmm">
+    <ContentPage.Content>
+        <StackLayout>
+           <Frame x:Name="hat" BackgroundColor="Black"
+                 Padding="35"
+                 CornerRadius="5"
+                 Margin="155,5">
+              <Label FontSize="Small"/>
+           </Frame>
+           <Frame x:Name="hat2"
+                 BackgroundColor="Black"
+                 Padding="5"
+                 CornerRadius="5"
+                 Margin="85,-15">
+              <Label FontSize="Small"/>
+           </Frame>
+           <Frame x:Name="head"
+                 BackgroundColor="AliceBlue"
+                 Padding="45"
+                 CornerRadius="120"
+                 Margin="150,-5">
+              <Label FontSize="Small"/>
+           </Frame>
+           <Frame x:Name="body"
+                 BackgroundColor="AliceBlue"
+                 Padding="60"
+                 CornerRadius="130"
+                 Margin="135,-5">
+              <Label FontSize="Medium"/>
+           </Frame>
+           <Frame x:Name="legs"
+                 BackgroundColor="AliceBlue"
+                 Padding="70"
+                 CornerRadius="140"
+                 Margin="120,-5">
+              <Label FontSize="Large"/>
+           </Frame>
+        <StackLayout Orientation="Horizontal">
+              <Button x:Name="on"
+                 Text="Sisse"
+                 HorizontalOptions="StartAndExpand"
+                 Clicked="on_Clicked"
+                 BackgroundColor="Red"/>
+              <Button x:Name="off"
+                 Text="Välja"
+                 HorizontalOptions="Center"
+                 Clicked="off_Clicked"
+                 BackgroundColor="Green"/>
+              <Button x:Name="Random"
+                 Text="Random"
+                 HorizontalOptions="EndAndExpand"
+                 Clicked="Random_Clicked"
+                 BackgroundColor="Gold"/>
+              <Button x:Name="Sulama"
+                 Text="Sulama"
+                 HorizontalOptions="EndAndExpand"
+                 Clicked="Sulama_Clicked"
+                 BackgroundColor="Blue"/>
+        </StackLayout>
+          <StackLayout Orientation="Vertical">
+              <Button x:Name="Oma"
+                 Text="Minu oma"
+                 Clicked="Oma_Clicked"
+                 BackgroundColor="DarkViolet"/>
+          </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
