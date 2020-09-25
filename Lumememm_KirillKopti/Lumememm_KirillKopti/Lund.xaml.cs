@@ -31,7 +31,7 @@ namespace Lumememm_KirillKopti
             legs = new BoxView { Color = Color.Green, CornerRadius = 70 };
             AbsoluteLayout.SetLayoutBounds(head, new Rectangle(0.3, 0.4, 200, 300));
             AbsoluteLayout.SetLayoutFlags(head, AbsoluteLayoutFlags.All);
-            abs.Children.Add(legs);
+            abs.Children.Add(legs;
             Content = abs;
         }
     }
