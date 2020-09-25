@@ -10,7 +10,7 @@ namespace Lumememm_KirillKopti
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Lund();
         }
 
         protected override void OnStart()
