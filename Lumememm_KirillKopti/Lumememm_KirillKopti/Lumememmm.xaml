@@ -18,21 +18,21 @@
               <Label FontSize="Small"/>
            </Frame>
            <Frame x:Name="head"
-                 BackgroundColor="AliceBlue"
+                 BackgroundColor="DarkBlue" 
                  Padding="45"
                  CornerRadius="120"
                  Margin="150,-5">
               <Label FontSize="Small"/>
            </Frame>
            <Frame x:Name="body"
-                 BackgroundColor="AliceBlue"
+                 BackgroundColor="DarkBlue"
                  Padding="60"
                  CornerRadius="130"
                  Margin="135,-5">
               <Label FontSize="Medium"/>
            </Frame>
            <Frame x:Name="legs"
-                 BackgroundColor="AliceBlue"
+                 BackgroundColor="DarkBlue"
                  Padding="70"
                  CornerRadius="140"
                  Margin="120,-5">

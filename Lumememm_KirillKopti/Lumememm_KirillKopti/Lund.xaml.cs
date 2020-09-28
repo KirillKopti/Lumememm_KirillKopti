@@ -16,23 +16,44 @@ namespace Lumememm_KirillKopti
         public Lund()
         {
             AbsoluteLayout abs = new AbsoluteLayout();
-            head = new BoxView { Color = Color.White, CornerRadius = 50 };
-            AbsoluteLayout.SetLayoutBounds(head, new Rectangle(0.1, 0.2, 200, 99));
-            AbsoluteLayout.SetLayoutFlags(head, AbsoluteLayoutFlags.All);
+            head = new BoxView { Color = Color.Blue, CornerRadius = 80 };
+            AbsoluteLayout.SetLayoutBounds(head, new Rectangle(0.5, 0.1, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(head, AbsoluteLayoutFlags.PositionProportional);
             abs.Children.Add(head);
             Content = abs;
 
-            body = new BoxView { Color = Color.Yellow, CornerRadius = 60 };
-            AbsoluteLayout.SetLayoutBounds(head, new Rectangle(0.4, 0.3, 200, 200));
-            AbsoluteLayout.SetLayoutFlags(head, AbsoluteLayoutFlags.All);
+            body = new BoxView { Color = Color.Blue, CornerRadius = 80 };
+            AbsoluteLayout.SetLayoutBounds(body, new Rectangle(0.5, 0.3, 150, 150));
+            AbsoluteLayout.SetLayoutFlags(body, AbsoluteLayoutFlags.PositionProportional);
             abs.Children.Add(body);
             Content = abs;
 
-            legs = new BoxView { Color = Color.Green, CornerRadius = 70 };
-            AbsoluteLayout.SetLayoutBounds(head, new Rectangle(0.3, 0.4, 200, 300));
-            AbsoluteLayout.SetLayoutFlags(head, AbsoluteLayoutFlags.All);
-            abs.Children.Add(legs;
+            legs = new BoxView { Color = Color.Blue, CornerRadius = 100 };
+            AbsoluteLayout.SetLayoutBounds(legs, new Rectangle(0.5, 0.7, 200, 200));
+            AbsoluteLayout.SetLayoutFlags(legs, AbsoluteLayoutFlags.PositionProportional);
+            abs.Children.Add(legs);
             Content = abs;
+
+            head = new Button { Text = "head" };
+            head.Clicked += Btn1_Clicked;
+            AbsoluteLayout.SetLayoutBounds(head, new Rectangle(0.1, 0.2, 100, 100));
+            AbsoluteLayout.SetLayoutFlags(head, AbsoluteLayoutFlags.PositionProportional);
+            abs.Children.Add(head);
+            Content = abs;
+        }
+        bool flag = true;
+        private void Btn1_Clicked(object sender, EventArgs e)
+        {
+            if (flag)
+            {
+                head.Opacity = 0;
+                flag = false;
+            }
+            else
+            {
+                head.Opacity = 1;
+                flag = true;
+            }
         }
     }
 }
